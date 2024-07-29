@@ -28,13 +28,14 @@ def clock_hand_vector(angle, length):
 # draw an image background
 fig, ax = plt.subplots()
 
+
 while True:
     plt.imshow(background)
 
     # First retrieve the time
     now_time = datetime.now()
     hour = now_time.hour
-    if hour>12: hour = hour - 12
+    if hour>12: hour = hour - 12 #hour = hour + 1/60
     minute = now_time.minute
     second = now_time.second
 
@@ -50,3 +51,6 @@ while True:
 
     plt.pause(0.1)
     plt.clf()
+    
+
+
