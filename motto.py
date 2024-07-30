@@ -1,5 +1,6 @@
 
-
+import tensorflow
+print(tensorflow.version.VERSION)
 path = "/Users/jadencheung/Documents/GitHub/ROAR-Academy/Week Two Exercises"
 
 try:
