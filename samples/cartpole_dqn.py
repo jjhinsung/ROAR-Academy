@@ -18,7 +18,10 @@ from keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
 
 EPISODES = 100
-
+#PID controller constants
+Kp = 1.0 # Proportional 
+Ki = 0 #Integral
+Kd = 0.5  #derivative
 class DQNAgent:
     def __init__(self, state_size, action_size):
         self.state_size = state_size
